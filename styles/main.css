@@ -2,3 +2,7 @@ body {
   background-color: #272823;
   color: #EEE;
 }
+
+table {
+  text-align: center;
+}
