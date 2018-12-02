@@ -3,35 +3,36 @@ var nav = $("#nav");
 
 function buildNav(n) {
   for (i = 1; i <= n; i++) {
-    nav.append(`
-      <li class="nav-item">
+    nav.append(
+      `<li class="nav-item">
         <a id="week${i}" class="nav-link" href="#">Week ${i}</a>
       </li>`)
   }
 }
 
-function buildRow(rank = '#', team = 'n', opp = 'n', opy = 'n', ory = 'n', opt = 'n',
-  ort = 'n', dpy = 'n', dry = 'n', dpt = 'n') {
-  row = `
-  <tr>
+function buildRow(rank = '#', team = 'n', opp = 'n', score = 'n - n', oPassY = 'n', oRushY = 'n',
+  dPassY = 'n', dRushY = 'n', offP = 'n', defP = 'n', spTms = 'n') {
+  row =
+  `<tr>
     <td>${rank}</td>
     <td>${team}</td>
     <td>${opp}</td>
-    <td>${opy}</td>
-    <td>${ory}</td>
-    <td>${opt}</td>
-    <td>${ort}</td>
-    <td>${dpy}</td>
-    <td>${dry}</td>
-    <td>${dpt}</td>
+    <td>${score}</td>
+    <td>${oPassY}</td>
+    <td>${oRushY}</td>
+    <td>${dPassY}</td>
+    <td>${dRushY}</td>
+    <td>${offP}</td>
+    <td>${defP}</td>
+    <td>${spTms}</td>
   </tr>`;
   return row;
 }
 
 $(document).ready(function() {
-  buildNav(10);
+  buildNav(12);
   for (i = 1; i <= 32; i++) {
-    tBody.append(buildRow(i));
+    tBody.append(buildRow(i,i));
   }
   $('#table').DataTable();
 });
