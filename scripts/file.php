@@ -10,7 +10,7 @@
     $rank = 1;
     while($row = mysqli_fetch_array($result)){
       echo "<tr>
-        <td>" . $rank++ . "</td>
+        <td>" . $row[15] . "</td>
         <td>" . $row[0] . "</td>
         <td>" . $row[2] . "</td>
         <td>" . $row[3] . "</td>
