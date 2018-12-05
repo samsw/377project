@@ -36,14 +36,14 @@ function buildNav(n) {
 }
 
 function populate(week) {
+  $('#wrap').html(`<table id="table" class="table table-bordered table-striped" align="center"></table>`)
   $('#table').html(header);
-  var tBody = $("#tBody");
   $.ajax({
     type: "POST",
     url: "scripts/file.php",
     data: {week: week},
     success: function (data) {
-      tBody.append(data);
+      $("#tBody").append(data);
       $('#table').DataTable();
     }
   });
