@@ -6,7 +6,7 @@ var header = `<thead>
     <th colspan="5">Defense</th>
   </tr>
   <tr>
-<!--<th>Rank</th> -->
+    <th>Rank</th>
     <th>Team</th>
     <th>W/L</th>
     <th>Score</th>
