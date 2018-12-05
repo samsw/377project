@@ -1,12 +1,29 @@
 <?php
-$connection = mysql_connect('localhost', 'root', 'mysql');
-mysql_select_db('mydb');
+  $week = $_POST['week'];
+  if (isset($week)) {
+    $connection = mysqli_connect('localhost', 'root', 'mysql', 'mydb');
 
-$week = $_POST['week'];
-$result = mysql_query("SELECT * FROM `nfldata` WHERE `Week` = $week") or die(mysql_error());
+    $result = mysqli_query($connection, "SELECT * FROM `nfldata` WHERE `Week` = $week") or die(mysql_error());
 
-// Encode in JSON and echo back??
-// Could also just echo HTML if that's easier
+    while($row = mysqli_fetch_array($result)){
+      echo "<tr>
+        <td>" . $row[0] . "</td>
+        <td>" . $row[2] . "</td>
+        <td>" . $row[3] . "</td>
+        <td>" . $row[4] . "</td>
+        <td>" . $row[5] . "</td>
+        <td>" . $row[6] . "</td>
+        <td>" . $row[7] . "</td>
+        <td>" . $row[8] . "</td>
+        <td>" . $row[9] . "</td>
+        <td>" . $row[10] . "</td>
+        <td>" . $row[11] . "</td>
+        <td>" . $row[12] . "</td>
+        <td>" . $row[13] . "</td>
+        <td>" . $row[14] . "</td>
+      </tr>";
+    }
 
-mysql_close();
+    mysqli_close($connection);
+  }
 ?>
