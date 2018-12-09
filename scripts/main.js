@@ -5,8 +5,8 @@ var header =
     <thead>
       <tr>
         <th colspan="5"></th>
-        <th colspan="5">Offense</th>
-        <th colspan="5">Defense</th>
+        <th colspan="6">Offense</th>
+        <th colspan="6">Defense</th>
       </tr>
       <tr>
         <th>Rank</th>
