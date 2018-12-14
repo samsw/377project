@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(to bottom, black , grey);
+  background-image: linear-gradient(to bottom, black 15%, grey);
   background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
