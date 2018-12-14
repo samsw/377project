@@ -1,0 +1,7 @@
+.title{text-align: center; font-size: 40pt; border-style: double;}
+.desc{text-align: center; font-size: 15pt;}
+.bottom-text{text-align: center;}
+.nav{display: flex;
+  justify-content: center;}
+th{color: orange;}
+.sorting_1{color: red;}
