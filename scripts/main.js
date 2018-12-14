@@ -4,7 +4,7 @@ var header =
   `<table id="table" class="table table-bordered table-striped" align="center">
     <thead>
       <tr>
-        <th colspan="5"></th>
+        <th colspan="5">Summary</th>
         <th colspan="6">Offense</th>
         <th colspan="6">Defense</th>
       </tr>
