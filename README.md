@@ -1,5 +1,6 @@
 # 377teamproject
 Website Demo: https://pcho123.github.io/377project/
+Website URL: http://ec2-54-89-243-167.compute-1.amazonaws.com/index.html#
 
 ## Team Members
 * Phyllip Cho 
